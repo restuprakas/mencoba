@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="262dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="189dp"
+                        android:layout_margin="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/senja"
+                            tools:srcCompat="@drawable/senja" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fillViewport="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="SENJA"
+                                    android:textAlignment="center"
+                                    android:textSize="30dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="372dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:text="Senja atau maghrib adalah bagian waktu dalam hari atau keadaan setengah gelap di bumi sesudah matahari terbenam,[1] ketika piringan matahari secara keseluruhan telah hilang dari cakrawala. Waktu ini dimulai setelah matahari tenggelam saat cahaya masih terlihat di langit hingga datangnya waktu malam (isya) saat cahaya merah (syafak) benar-benar hilang."
+                                    android:textAlignment="center"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+                        </androidx.core.widget.NestedScrollView>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:text="Request To Book"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
